@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>400</order>
+        <published_ref/>
+        <question display_value="Inaccurate Dataset">05bf73fb87c691901acc33f50cbb35c0</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>Nicholas.Blanchard</sys_created_by>
+        <sys_created_on>2022-09-27 13:40:48</sys_created_on>
+        <sys_id>b6735488875a91901acc33f50cbb353b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OA</sys_name>
+        <sys_package display_value="DOT Employee Directory Manager" source="x_dot_dirmgr">f2ba728813da041032813092e144b01f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DOT Employee Directory Manager">f2ba728813da041032813092e144b01f</sys_scope>
+        <sys_update_name>question_choice_b6735488875a91901acc33f50cbb353b</sys_update_name>
+        <sys_updated_by>Nicholas.Blanchard</sys_updated_by>
+        <sys_updated_on>2022-09-27 13:40:48</sys_updated_on>
+        <text>OA</text>
+        <value>u_oa</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=b6735488875a91901acc33f50cbb353b"/>
+</record_update>

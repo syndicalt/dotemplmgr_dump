@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="References Change Log" language="en" table="x_dot_dirmgr_references_change_log">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>References Change Log</label>
+            <language>en</language>
+            <name>x_dot_dirmgr_references_change_log</name>
+            <plural>References Change Logs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>nicholas.blanchard</sys_created_by>
+            <sys_created_on>2023-01-28 05:08:36</sys_created_on>
+            <sys_id>46d97f1b87a0e9908c5c62860cbb35d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>References Change Log</sys_name>
+            <sys_package display_value="DOT Employee Directory Manager" source="x_dot_dirmgr">f2ba728813da041032813092e144b01f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="DOT Employee Directory Manager">f2ba728813da041032813092e144b01f</sys_scope>
+            <sys_update_name>sys_documentation_x_dot_dirmgr_references_change_log__en</sys_update_name>
+            <sys_updated_by>nicholas.blanchard</sys_updated_by>
+            <sys_updated_on>2023-01-28 05:08:36</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

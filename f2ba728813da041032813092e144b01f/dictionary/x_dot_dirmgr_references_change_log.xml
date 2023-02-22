@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="References Change Log" max_length="40" name="x_dot_dirmgr_references_change_log" sizeclass="7062" type="collection">
+        <element label="Change Key" max_length="64" name="change_key" type="string"/>
+        <element label="Table Name" max_length="255" name="table_name" type="string"/>
+    </element>
+</database>

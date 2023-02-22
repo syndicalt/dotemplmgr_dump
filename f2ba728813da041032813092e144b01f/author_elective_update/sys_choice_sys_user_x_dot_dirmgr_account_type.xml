@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="x_dot_dirmgr_account_type" table="sys_user" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>x_dot_dirmgr_account_type</element>
+            <name>sys_user</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Nicholas.Blanchard</sys_created_by>
+            <sys_created_on>2022-09-20 22:08:53</sys_created_on>
+            <sys_id>3fa446f1878651501acc33f50cbb355f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_dot_dirmgr_account_type</sys_name>
+            <sys_package display_value="DOT Employee Directory Manager" source="x_dot_dirmgr">f2ba728813da041032813092e144b01f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="DOT Employee Directory Manager">f2ba728813da041032813092e144b01f</sys_scope>
+            <sys_update_name>sys_choice_sys_user_x_dot_dirmgr_account_type</sys_update_name>
+            <sys_updated_by>Nicholas.Blanchard</sys_updated_by>
+            <sys_updated_on>2022-09-20 22:08:53</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_dot_dirmgr_account_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Contractor</label>
+            <language>en</language>
+            <name>sys_user</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>Nicholas.Blanchard</sys_created_by>
+            <sys_created_on>2022-09-20 22:09:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ceb482f1878651501acc33f50cbb354e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Nicholas.Blanchard</sys_updated_by>
+            <sys_updated_on>2022-09-20 22:09:15</sys_updated_on>
+            <value>contractor</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_dot_dirmgr_account_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Federal Employee</label>
+            <language>en</language>
+            <name>sys_user</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>Nicholas.Blanchard</sys_created_by>
+            <sys_created_on>2022-09-20 22:10:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7ce48af1878651501acc33f50cbb351c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Nicholas.Blanchard</sys_updated_by>
+            <sys_updated_on>2022-09-20 22:10:00</sys_updated_on>
+            <value>federal employee</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_dot_dirmgr_account_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Service Account</label>
+            <language>en</language>
+            <name>sys_user</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>Nicholas.Blanchard</sys_created_by>
+            <sys_created_on>2022-09-20 22:10:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e1f48af1878651501acc33f50cbb351e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Nicholas.Blanchard</sys_updated_by>
+            <sys_updated_on>2022-09-20 22:10:19</sys_updated_on>
+            <value>service account</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

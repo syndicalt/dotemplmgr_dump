@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="x_dot_dirmgr_account_type" label="Account Type" language="en" table="sys_user">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_dot_dirmgr_account_type</element>
+            <help/>
+            <hint/>
+            <label>Account Type</label>
+            <language>en</language>
+            <name>sys_user</name>
+            <plural>Account Types</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Nicholas.Blanchard</sys_created_by>
+            <sys_created_on>2022-09-20 22:08:26</sys_created_on>
+            <sys_id>159406f1878651501acc33f50cbb358c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Account Type</sys_name>
+            <sys_package display_value="DOT Employee Directory Manager" source="x_dot_dirmgr">f2ba728813da041032813092e144b01f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="DOT Employee Directory Manager">f2ba728813da041032813092e144b01f</sys_scope>
+            <sys_update_name>sys_documentation_sys_user_x_dot_dirmgr_account_type_en</sys_update_name>
+            <sys_updated_by>Nicholas.Blanchard</sys_updated_by>
+            <sys_updated_on>2022-09-20 22:08:26</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

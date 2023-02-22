@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Sys User Transaction" max_length="40" name="x_dot_dirmgr_sys_user_transaction" sizeclass="4" type="collection">
+        <element label="Cost Center" max_length="32" name="cost_center" reference="cmn_cost_center" type="reference"/>
+        <element label="Department" max_length="32" name="department" reference="cmn_department" type="reference"/>
+        <element label="Email" max_length="100" name="email" read_only="true" type="string"/>
+        <element label="First Name" max_length="50" name="first_name" type="string"/>
+        <element label="Last Name" max_length="50" name="last_name" type="string"/>
+        <element label="Location" max_length="32" name="location" reference="cmn_location" type="reference"/>
+        <element label="Manager" max_length="32" name="manager" reference="sys_user" type="reference"/>
+        <element label="Middle Name" max_length="40" name="middle_name" type="string"/>
+        <element label="Mobile Phone" max_length="20" name="mobile_phone" type="string"/>
+        <element label="Name" max_length="151" name="name" type="string"/>
+        <element label="Business Phone" max_length="20" name="phone" type="string"/>
+        <element label="Processed" max_length="40" name="processed" type="boolean"/>
+        <element label="Title" max_length="80" name="title" type="string"/>
+        <element label="Updated By" max_length="32" name="updated_by" read_only="true" reference="sys_user" type="reference"/>
+        <element label="User ID" max_length="40" name="user_name" read_only="true" type="string"/>
+        <element label="User Record" mandatory="true" max_length="32" name="user_record" read_only="true" reference="sys_user" type="reference"/>
+        <element label="OA" max_length="32" name="u_oa" reference="u_mode_definition" type="reference"/>
+        <element label="Remote" max_length="40" name="u_remote" type="boolean"/>
+        <element choice="1" label="Account Type" max_length="40" name="x_dot_dirmgr_account_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Contractor" sequence="100" value="Contractor"/>
+                <element inactive_on_update="false" label="Federal Employee" sequence="200" value="Federal Employee"/>
+                <element inactive_on_update="false" label="Service Account" sequence="300" value="Service Account"/>
+                <element inactive_on_update="false" label="Shared Mailbox" sequence="400" value="Shared Mailbox"/>
+            </choice>
+        </element>
+        <element label="Hire Date" max_length="40" name="x_dot_dirmgr_hire_date" type="glide_date"/>
+        <element label="Preferred Name" max_length="40" name="x_dot_dirmgr_preferred_name" type="string"/>
+        <index name="index">
+            <element name="manager"/>
+        </index>
+        <index name="index2">
+            <element name="cost_center"/>
+        </index>
+        <index name="index3">
+            <element name="updated_by"/>
+        </index>
+        <index name="index4">
+            <element name="location"/>
+        </index>
+        <index name="index5">
+            <element name="user_record"/>
+        </index>
+        <index name="index6">
+            <element name="u_oa"/>
+        </index>
+        <index name="index7">
+            <element name="department"/>
+        </index>
+    </element>
+</database>

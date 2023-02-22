@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition">
+    <sys_ws_definition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <base_uri>/api/x_dot_dirmgr/container</base_uri>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_version>No active default version</default_version>
+        <doc_link/>
+        <enforce_acl>e0b43de987b8add01acc33f50cbb3558</enforce_acl>
+        <is_versioned>false</is_versioned>
+        <name>DOT Employee Directory Manager Container</name>
+        <namespace>x_dot_dirmgr</namespace>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <service_id>container</service_id>
+        <short_description/>
+        <sys_class_name>sys_ws_definition</sys_class_name>
+        <sys_created_by>nicholas.blanchard</sys_created_by>
+        <sys_created_on>2020-01-07 20:56:14</sys_created_on>
+        <sys_id>74daba8813da041032813092e144b0e1</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>DOT Employee Directory Manager Container</sys_name>
+        <sys_package display_value="DOT Employee Directory Manager" source="x_dot_dirmgr">f2ba728813da041032813092e144b01f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DOT Employee Directory Manager">f2ba728813da041032813092e144b01f</sys_scope>
+        <sys_update_name>sys_ws_definition_74daba8813da041032813092e144b0e1</sys_update_name>
+        <sys_updated_by>Nicholas.Blanchard</sys_updated_by>
+        <sys_updated_on>2023-02-04 04:15:56</sys_updated_on>
+    </sys_ws_definition>
+</record_update>

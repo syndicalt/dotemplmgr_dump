@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>GET</http_method>
+        <name>IMG</name>
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    var fileName = request.pathParams.file;
+    var currentRecord = "ac5b3ac813da041032813092e144b01c";
+    var ar = new GlideRecord('sys_attachment');
+    ar.addQuery('table_sys_id', currentRecord);
+    ar.addQuery('file_name', fileName);
+    ar.query();
+	
+	response.setContentType('image/jpeg');
+    response.setStatus(200);
+
+    if (ar.next()) {
+		var gsa = new GlideSysAttachment();
+		var attachmentStream = new gsa.getContentStream(ar.sys_id.toString()); 
+		var writer = response.getStreamWriter();
+		writer.writeStream(attachmentStream);
+    } else {
+        return "file not found";
+    }
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_dot_dirmgr/container/img/{file}</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/img/{file}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>false</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>nicholas.blanchard</sys_created_by>
+        <sys_created_on>2020-01-07 20:58:53</sys_created_on>
+        <sys_id>ac5b3ac813da041032813092e144b01c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>IMG</sys_name>
+        <sys_package display_value="DOT Employee Directory Manager" source="x_dot_dirmgr">f2ba728813da041032813092e144b01f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DOT Employee Directory Manager">f2ba728813da041032813092e144b01f</sys_scope>
+        <sys_update_name>sys_ws_operation_ac5b3ac813da041032813092e144b01c</sys_update_name>
+        <sys_updated_by>nicholas.blanchard</sys_updated_by>
+        <sys_updated_on>2022-09-15 01:55:58</sys_updated_on>
+        <web_service_definition display_value="DOT Employee Directory Manager Container">74daba8813da041032813092e144b0e1</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_cors_rule">
+    <sys_cors_rule action="DELETE">
+        <delete>true</delete>
+        <domain>http://localhost:9000</domain>
+        <exposed_headers/>
+        <get>true</get>
+        <max_age>0</max_age>
+        <name>http://localhost:9000</name>
+        <patch>true</patch>
+        <post>true</post>
+        <put>true</put>
+        <rest_api>now/table</rest_api>
+        <sys_class_name>sys_cors_rule</sys_class_name>
+        <sys_created_by>Nicholas.Blanchard</sys_created_by>
+        <sys_created_on>2022-09-14 15:48:47</sys_created_on>
+        <sys_id>4c04b97b87f551108c5c62860cbb3502</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>http://localhost:9000</sys_name>
+        <sys_package display_value="DOT Employee Directory Manager" source="x_dot_dirmgr">f2ba728813da041032813092e144b01f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DOT Employee Directory Manager">f2ba728813da041032813092e144b01f</sys_scope>
+        <sys_update_name>sys_cors_rule_4c04b97b87f551108c5c62860cbb3502</sys_update_name>
+        <sys_updated_by>Nicholas.Blanchard</sys_updated_by>
+        <sys_updated_on>2022-09-14 15:50:21</sys_updated_on>
+    </sys_cors_rule>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="DOT Employee Directory Manager">f2ba728813da041032813092e144b01f</application>
+        <file_path/>
+        <instance_id>b8afdfeb1bf6349041ab202de54bcb20</instance_id>
+        <instance_name>usdotdev</instance_name>
+        <name>sys_cors_rule_4c04b97b87f551108c5c62860cbb3502</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_cors_rule"><sys_cors_rule action="INSERT_OR_UPDATE"><delete>true</delete><domain>http://localhost:9000</domain><exposed_headers/><get>true</get><max_age>0</max_age><name>http://localhost:9000</name><patch>true</patch><post>true</post><put>true</put><rest_api>now/table</rest_api><sys_class_name>sys_cors_rule</sys_class_name><sys_created_by>Nicholas.Blanchard</sys_created_by><sys_created_on>2022-09-14 15:48:47</sys_created_on><sys_id>4c04b97b87f551108c5c62860cbb3502</sys_id><sys_mod_count>2</sys_mod_count><sys_name>http://localhost:9000</sys_name><sys_package display_value="DOT Employee Directory Manager" source="x_dot_dirmgr">f2ba728813da041032813092e144b01f</sys_package><sys_policy/><sys_scope display_value="DOT Employee Directory Manager">f2ba728813da041032813092e144b01f</sys_scope><sys_update_name>sys_cors_rule_4c04b97b87f551108c5c62860cbb3502</sys_update_name><sys_updated_by>Nicholas.Blanchard</sys_updated_by><sys_updated_on>2022-09-14 15:50:21</sys_updated_on></sys_cors_rule></record_update>]]></payload>
+        <payload_hash>1332283553</payload_hash>
+        <record_name>http://localhost:9000</record_name>
+        <reverted_from/>
+        <source>d86eb5a787f55d108c5c62860cbb3536</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Nicholas.Blanchard</sys_created_by>
+        <sys_created_on>2022-09-14 15:50:21</sys_created_on>
+        <sys_id>608471bb87f551108c5c62860cbb35d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1833cb1b20f0000001</sys_recorded_at>
+        <sys_updated_by>Nicholas.Blanchard</sys_updated_by>
+        <sys_updated_on>2022-09-14 15:50:21</sys_updated_on>
+        <type>CORS Rule</type>
+        <update_guid>288471bb48f55110a14f83314f5f8cd4</update_guid>
+        <update_guid_history>288471bb48f55110a14f83314f5f8cd4:1332283553,6444b97be6f551108e176726843197ca:-1903740392,a5243d7b50f55110b1733e69af2f9fb1:30949206</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Nicholas.Blanchard</sys_created_by>
+        <sys_created_on>2023-02-02 18:57:46</sys_created_on>
+        <sys_db_object display_value="" name="sys_cors_rule">sys_cors_rule</sys_db_object>
+        <sys_id>91ed428d3aa849d081725685e980e900</sys_id>
+        <sys_metadata>4c04b97b87f551108c5c62860cbb3502</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>http://localhost:9000</sys_name>
+        <sys_package display_value="DOT Employee Directory Manager" source="x_dot_dirmgr">f2ba728813da041032813092e144b01f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="DOT Employee Directory Manager">f2ba728813da041032813092e144b01f</sys_scope>
+        <sys_scope_delete display_value="">90c089db0cdc4fc29475984a9e86e2f1</sys_scope_delete>
+        <sys_update_name>sys_cors_rule_4c04b97b87f551108c5c62860cbb3502</sys_update_name>
+        <sys_update_version display_value="sys_cors_rule_4c04b97b87f551108c5c62860cbb3502">608471bb87f551108c5c62860cbb35d5</sys_update_version>
+        <sys_updated_by>Nicholas.Blanchard</sys_updated_by>
+        <sys_updated_on>2023-02-02 18:57:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>e0b43de987b8add01acc33f50cbb3558</enforce_acl>
+        <http_method>GET</http_method>
+        <name>GetAll</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	var table = request.pathParams.table
+	var params = request.queryParams
+	var res = []
+	
+	if(table == 'sys_user') {
+		new global.GlideQuery(table)
+			.where('active', true)
+			.where('name','!=',null)
+			.where('u_samaccountname','!=',null)
+			.select(params.sysparm_fields[0].split(','))
+			.limit(params.sysparm_limit)
+			.forEach(function (user) {
+				var obj = {}
+
+				for(key in user) {
+					obj[key] = user[key]
+				}
+
+				res.push(obj)
+			})
+	} else {
+		new global.GlideQuery(table)
+			.select(params.sysparm_fields[0].split(','))
+			.limit(params.sysparm_limit)
+			.forEach(function (user) {
+				var obj = {}
+
+				for(key in user) {
+					obj[key] = user[key]
+				}
+
+				res.push(obj)
+			})
+	}
+
+	response.setContentType('application/json')
+	response.setStatus(200)
+	response.getStreamWriter().writeString(JSON.stringify(res))
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_dot_dirmgr/container/getall/{table}</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/getall/{table}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>Nicholas.Blanchard</sys_created_by>
+        <sys_created_on>2023-02-05 19:02:02</sys_created_on>
+        <sys_id>fff4485287b86dd08c5c62860cbb3557</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_name>GetAll</sys_name>
+        <sys_package display_value="DOT Employee Directory Manager" source="x_dot_dirmgr">f2ba728813da041032813092e144b01f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DOT Employee Directory Manager">f2ba728813da041032813092e144b01f</sys_scope>
+        <sys_update_name>sys_ws_operation_fff4485287b86dd08c5c62860cbb3557</sys_update_name>
+        <sys_updated_by>Nicholas.Blanchard</sys_updated_by>
+        <sys_updated_on>2023-02-05 20:29:12</sys_updated_on>
+        <web_service_definition display_value="DOT Employee Directory Manager Container">74daba8813da041032813092e144b0e1</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
